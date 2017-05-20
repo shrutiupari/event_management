@@ -123,7 +123,7 @@
             </div>
             
             <div class="form-group">
-            	New user<a href="register.php"> Reister here</a>
+            	New user<a href="register.php"> Register here</a>
             </div>
         
         </div>

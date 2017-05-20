@@ -5,44 +5,31 @@
 	
 	// if session is not set this will redirect to login page
 	// select loggedin users detail
-	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
-	$userRow=mysql_fetch_array($res);
-?>
+    $res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
+    $userRow=mysql_fetch_array($res);
 
-<?php
-session_start();
-include_once 'dbconnect.php';
-
-    $username = $_SESSION['firstName'];
+    $username = $_SESSION['fname'];
     $eventid=$_SESSION['eid'];
-    $eventid=1;
+    //$eventid=1;
     $eventname=$_SESSION['e_banner'];
     $useremail=$_SESSION['email'];
     $useraddress= $_SESSION['address'];
-    //$terms=$_SESSION['terms'];
-    $member_id=$_SESSION['user'];
-    
-    
-     $result = mysqli_query($conn, "SELECT * FROM users WHERE name = '" . $username. "' ");
-     if ($row = mysqli_fetch_array($result)) {
-        $member_id = $row['userId'];
-     }
-     else{
-          $errormsg = "No member login!!!";
-     }
-     
-     
-     $event_result = mysqli_query($conn, "SELECT * FROM images WHERE eid = '" . $eventid. "' ");
-     if ($event_row = mysqli_fetch_array($event_result)) {
+   // $member_id=$_SESSION['user'];  
+    $member_id=1;
+     $eventid=1;
+     $event_result = mysql_query($dbcon, "SELECT * FROM images WHERE eid = '" . $eventid. "' ");
+          //$event_result = mysql_query($dbcon, "SELECT * FROM images WHERE eid = 1 ");
+     //echo $event_result;
+     if ($event_row = mysql_fetch_array($event_result)) {
         $ticketprize = $event_row['e_price'];
         echo $ticketprize;
      }
      else{
           $errormsg = "No event";
      }
-     $ticketprize=100;
+ //$e_price=100;
  $no_of_tickets = $_POST['ticket_no'];
-        $total_prize=$ticketprize*$no_of_tickets;
+ $total_prize=$ticketprize*$no_of_tickets;
 $_SESSION['no_of_tickets']=$no_of_tickets;
 $_SESSION['total_price']=$total_prize;
 //$total_prize='100';
@@ -64,7 +51,7 @@ $_SESSION['total_price']=$total_prize;
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
 				<?php if (isset($_SESSION['usr_id'])) { ?>
-				<li><p class="navbar-text">Signed in as <?php echo $_SESSION['usr_name']; ?></p></li>
+				<li><p class="navbar-text">Signed in as <?php echo $_SESSION['$username']; ?></p></li>
 				<li><a href="logout.php">Log Out</a></li>
 				<?php } else { ?>
 				<li><a href="login.php">Login</a></li>
@@ -79,7 +66,7 @@ $_SESSION['total_price']=$total_prize;
 			<form role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="ticketbooking">
 				<fieldset>
                                     <h3 style="color:black;">Hello <?php echo $username?><br></h3>
-                                    <h4 style="color:black;">Welcome to book your tickets<br></h4>
+                                    <h4 style="color:black;">Welcome!!! Please book your tickets<br></h4>
                                     <h4 style="color:black;">For Event: <?php echo $eventname?><br></h4>
 					
 					<div>
@@ -101,8 +88,10 @@ $_SESSION['total_price']=$total_prize;
                   echo "5 tickets can be book at a time";
               }else{         
         $no_of_tickets = $_POST['ticket_no'];
-        $total_prize=$ticketprize*$no_of_tickets;
-        $book = mysqli_query($conn, "INSERT INTO concert.booking (mid,eid,b_seats,b_price) VALUES ('" . $member_id . "', '" . $eventid . "', '" . $no_of_tickets . "','" . $total_prize . "')");
+        $no_of_tickets=4;
+        //$total_prize=$ticketprize*$no_of_tickets;
+        $total_prize=100;
+        $book = mysqli_query($dbcon, "INSERT INTO concert.booking (eid,mid,b_price,b_seats) VALUES ('" . $eventid . "', '" . $member_id . "', '" . $total_prize . "','" . $no_of_tickets . "')");
          //$sql = mysqli_query($conn,"UPDATE concert.images SET no_of_seats=e_seatsavail-$b_seats where id='$eid'");             
                   
                   echo ("<script>
@@ -118,6 +107,8 @@ $_SESSION['total_price']=$total_prize;
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
 
 
 

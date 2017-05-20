@@ -19,6 +19,7 @@ $_SESSION['eid']=$row['eid'];
 <div><h3><b>EventName:</b></h3><?php echo $row['e_banner']; ?> </div><br>
 <div><h3><b>Description:</b></h3><?php echo $row['e_description']; ?></div><br>
 <div><h3><b>Venue:</b></h3><?php echo $row['e_venue']; ?></div><br>
+<div><h3><b>Event Price:</b></h3><?php echo $row['e_price'];?></div><br>
 <div><h3><b>EventStartDate:</b></h3><?php echo $row['e_startdate']; ?></div><br>
 <div><h3><b>EventEndDate:</b></h3><?php echo $row['e_enddate']; ?></div><br>
 <div> <h3> <b> Contact Us: </b> </h3> <?php echo $row['e_contact'];?> </div><br>

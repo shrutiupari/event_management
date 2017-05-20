@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3layouts-banner-info">
 				<div class="container">
 					<div class="w3ls-text">
-						<h2>Week end DJ</h2>
+						<h2>Events</h2>
 					</div>
 					<div class="w3-arrow bounce animated">
 						<a href="#indro" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -104,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="w3ls-border"> </div>
 			</div>
 			<div class="introduction-info">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus iaculis lacus in pharetra. Morbi tincidunt nisi et bibendum varius. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vulputate arcu consequat enim vulputate posuere. Aenean malesuada quam vitae mi ullamcorper, vel lobortis risus rutrum.</p>
+				<p>An Event is something that happens for a refreshment of our mind's. We get to see few renowned people and a place for enjoyment. </p>
 			</div>
 		</div>
 	</div>
@@ -123,9 +123,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="glyphicon glyphicon-asterisk effect-1" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-9 about-grid-right">
-							<h4>Cum soluta nobis est</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus 
-							reiciendis maiores alias consequatur aut</p>
+							<h4>Aissel Technology</h4>
+							<p>We provide the best offers that will be helpful for all.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -134,9 +133,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="glyphicon glyphicon-road effect-1" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-9 about-grid-right">
-							<h4>Soluta nobis est cum</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus 
-							reiciendis maiores alias consequatur aut</p>
+							<h4>Google</h4>
+							<p>We provide the information required</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -148,9 +146,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="glyphicon glyphicon-plane effect-1" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-9 about-grid-right">
-							<h4>Eligendi cum soluta nobis</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus 
-							reiciendis maiores alias consequatur aut</p>
+							<h4>Blue Matrix</h4>
+							<p>We provide the best organization for all.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -159,9 +156,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="glyphicon glyphicon-bed effect-1" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-9 about-grid-right">
-							<h4>Nobis cum soluta est</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus 
-							reiciendis maiores alias consequatur aut</p>
+							<h4>Jelly Cone</h4>
+							<p>An idea to use website and have events of our own.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -206,8 +202,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</a>
 									</div>
 									<div class="agile-gallery-info">
-										<h5>Lorem</h5>
-										<button style="border-radius: 10px; background-color:white; border:1px solid black; text-decoration: none; margin-left:60px; height:40px;" type="submit" ><a href="login.php">Book Tickets</a></button>
+										<h5>Concert</h5>
+										<button style="border-radius: 10px; background-color:white; border:1px solid black; text-decoration: none; margin-left:60px; height:40px;" type="submit" ><a href="login.php">Description</a></button>
 									</div>
 								</div>
 								
@@ -225,8 +221,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</a>
 									</div>
 									<div class="agile-gallery-info">
-										<h5>Ipsum</h5>
-										<button style="border-radius: 10px; background-color:white; border:1px solid black; text-decoration: none; margin-left:60px; height:40px;" type="submit" ><a href="login.php">Book Tickets</a></button>
+										<h5>Drama</h5>
+										<button style="border-radius: 10px; background-color:white; border:1px solid black; text-decoration: none; margin-left:60px; height:40px;" type="submit" ><a href="login.php">Description</a></button>
 									</div>
 								</div>
 								
